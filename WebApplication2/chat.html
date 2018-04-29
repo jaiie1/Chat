@@ -1,0 +1,35 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="Scripts/jquery-3.2.1.min.js"></script>
+    <title>Star Wars Elite Chat Application</title>
+    
+</head>
+<body>
+    
+    <h1>Star Wars Elite Chat</h1>
+
+    <p>Enter a username below and click to connect: </p>
+
+    <!--text box to enter username and a button to click to connect to server-->
+    <form id="userConnectionForm"  action="">
+        <input id="userNameToBeEnteredBox" />
+        <input type="submit" value="Click to connect" />
+    </form>
+
+    <br />
+
+    <!--simple chat field to enter messages-->
+        <input id="inputbox" placeholder="Enter message here" />
+        <button type="button" id="sendButton">Send</button>
+
+    <!--div to display our broadcast messages at-->
+    <div id="messages"></div>
+
+    <!--client-side WebSocket functionality-->
+    <script src="JSuppgift_3.js"></script>
+
+</body>
+</html>
